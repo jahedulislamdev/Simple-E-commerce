@@ -1,0 +1,32 @@
+.card-image {
+    height: 200px;
+    object-fit: cover;
+}
+.category-btn {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+#categoryContainer {
+    margin-bottom: 20px;
+    height: 55px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    text-wrap: nowrap;
+}
+
+.category-btn {
+    color: #000;
+    border-radius: 5px;
+}
+.category-btn:hover {
+    background-color: #d9d9d9;
+}
+
+.category-btn.active {
+    background-color: #2260a2;
+    color: #fff;
+}
