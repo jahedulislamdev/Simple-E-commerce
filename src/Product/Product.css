@@ -17,6 +17,9 @@
     overflow-y: hidden;
     text-wrap: nowrap;
 }
+#categoryContainer::-webkit-scrollbar {
+    display: none;
+}
 
 .category-btn {
     color: #000;
@@ -29,4 +32,28 @@
 .category-btn.active {
     background-color: #2260a2;
     color: #fff;
+}
+
+/* product details page design */
+.color-radio {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    border: 2px solid #fff;
+    transition: border 0.3s;
+}
+.form-check-input:checked + .color-radio {
+    border: 4px solid #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+.quantity {
+    width: 25%;
+}
+
+@media screen and (max-width: 530px) {
+    .quantity {
+        width: 50%;
+    }
 }

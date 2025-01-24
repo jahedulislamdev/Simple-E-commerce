@@ -5,9 +5,10 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>BrandName - HOME</title>
-   <link rel="stylesheet" href="../CSS/utility.css">
-   <link rel="stylesheet" href="index.css">
+   <link rel="stylesheet" href="/src/CSS/utility.css">
+   <link rel="stylesheet" href="/src/Home/index.css">
    <link rel="stylesheet" href="../../src/CSS/bootstrap.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
 <body>
@@ -16,10 +17,18 @@
       <div class="container-fluid">
          <a href="index.html" class="navbar-brand fw-bold text-uppercase">BrandName</a>
          <!-- <img src="" alt=""> -->
-         <button class="btn navbar-toggler" type="button" data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
-            <span class="navbar-toggler-icon"></span>
-         </button>
+         <div class="d-flex">
+            <button class="btn navbar-toggler" type="button" data-bs-toggle="offcanvas"
+               data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <button class="btn d-none position-relative rounded-1 px-2 py-0" id="ShoppingBag">
+               <i class="fa-solid fa-cart-shopping"></i>
+               <span class="position-absolute top-0 start-100 translate-middle px-2 py-0 rounded-circle">
+                  <span id="ShoppingBagCounter" class="text-sm p-0 m-0 text-warning">0</span>
+               </span>
+            </button>
+         </div>
          <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
             aria-labelledby="offcanvasWithBothOptionsLabel">
             <div class="offcanvas-header">
@@ -30,12 +39,21 @@
                <ul class="navbar-nav ms-auto">
                   <li class="nav-item mx-4 h6"><a href="index.html" class="nav-link active text-white px-2">Services</a>
                   </li>
-                  <li class="nav-item mx-4 h6"><a href="../Product/Product.html" class="nav-link px-2">Products</a></li>
-                  <li class="nav-item mx-4 h6"><a href="../Contact/contact.html" class="nav-link px-2">Contact</a></li>
+                  <li class="nav-item mx-4 h6"><a href="/src/Product/Product.html" class="nav-link px-2">Products</a>
+                  </li>
+                  <li class="nav-item mx-4 h6"><a href="/src/Contact/contact.html" class="nav-link px-2">Contact</a>
+                  </li>
+                  <li class="nav-item mx-4">
+                     <button class="btn d-none d-md-block position-relative rounded-1 px-2 py-0" id="ShoppingBag">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle px-2 py-0 rounded-circle">
+                           <span id="ShoppingBagCounter" class="text-sm p-0 m-0 text-warning">0</span>
+                        </span>
+                     </button>
+                  </li>
                </ul>
             </div>
          </div>
-
       </div>
    </nav>
    <!-- navbar end-->
@@ -47,14 +65,14 @@
                meet curated variety, offering you exclusive products at your fingertips."</p>
          </div>
       </div>
-      <div class="row p-2 p-lg-5 justify-content-center align-items-center business-card">
+      <div class="row p-2 p-lg-5 justify-content-center business-card">
          <div class="col col-sm-6 col-md-4 col-lg-3 mt-3 mt-md-0">
             <div class="product-card card-body  rounded-4 border border-5 border-primary-subtle">
                <img
                   src="https://img.freepik.com/free-vector/hand-customer-picking-category-internet-store-tablet-with-online-clothing-shop-screen-flat-vector-illustration-sale-online-shopping-ecommerce-concept-banner-landing-web-page_74855-24709.jpg"
                   class=" rounded-top-3 object-fit-cover mx-auto opacity-75">
                <p class="text-center m-0 bg-primary-subtle py-3 rounded-bottom-3">
-                  <a href="../Product/Product.html"
+                  <a href="/src/Product/Product.html"
                      class="product-card-link text-decoration-none text-dark text-md w-100%">Online
                      Shopping
                   </a>
@@ -102,6 +120,7 @@
    </footer>
    <!-- Footer end-->
    <script src="../../src/JS/bootstrap.js"></script>
+   <script src="/src/JS/index.js"></script>
 </body>
 
 </html>
